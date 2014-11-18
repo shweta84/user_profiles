@@ -28,7 +28,7 @@ gem 'spring',        group: :development
 gem 'twitter'
 gem 'github_api'
 gem 'pdfkit'
-# gem 'wkhtmltopdf-binary'
+gem 'wkhtmltopdf-binary'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
