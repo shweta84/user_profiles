@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css" media="print">
+    @media print {
+        body { background-color: skyblue; }
+        .github, .ruby_gems{
+            float: left;
+            width: 50%;
+        }
+        .twitter {
+            width: 100%;
+        }
+        .pdf_link {
+            display: none;
+        }
+    }
+  </style>
+</head>
+<body>
+
+
+<section>
+  <div><%= link_to 'Home', root_path, class: 'pdf_link' %></div>
+
+  <%= notice %>
+  <%= alert %>
+
+<%= yield %>
+</section>
+
+</body>
+</html>

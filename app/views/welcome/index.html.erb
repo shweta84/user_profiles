@@ -1,0 +1,11 @@
+<%= form_tag get_details_path, method: :get do  %>
+
+    <div class="field">
+      <%= label_tag :username %><br>
+      <%= text_field_tag :username, nil, required: true %>
+    </div>
+
+    <div class="actions">
+      <%= submit_tag 'Submit' %>
+    </div>
+<% end %>
