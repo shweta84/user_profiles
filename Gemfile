@@ -34,6 +34,7 @@ gem 'pdfkit'
 
 # Use unicorn as the app server
 gem 'unicorn'
+gem 'foreman'
 group :development, :test do
   gem 'rails_best_practices'
   gem 'rspec-rails'
