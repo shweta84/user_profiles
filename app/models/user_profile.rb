@@ -16,8 +16,6 @@ class UserProfile
       []
     rescue Twitter::Error::RequestTimeout
       []
-    rescue
-      []
     end
   end
 
