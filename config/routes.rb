@@ -7,8 +7,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-  get 'home' => 'welcome#index'
-  get '/profile' => 'welcome#get_details', as: :get_details
+
+  resources :welcome, only: :index do
+    get 'get_details', on: :collection
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
