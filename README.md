@@ -9,3 +9,4 @@ It fetches details from different accounts:
 
 It allows to download PDF document containing the details from Twitter, Github, RubyGems
 
+Heroku: https://powerful-inlet-2298.herokuapp.com/
